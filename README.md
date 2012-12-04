@@ -5,9 +5,9 @@ socket.io-proxy
 
 ### Request from JS (using socket.io client)
 
+```javascript
 var socket = io.connect('http://localhost:8080');
 
-```javascript
 socket.emit('request', {
   url: 'path/to/request',
   method: 'POST',
