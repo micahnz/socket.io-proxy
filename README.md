@@ -18,6 +18,11 @@ socket.emit('request', {
 }, function(response) {
   console.log(response.responseText);
 });
+
+socket.on('push', function(message) {
+  console.log(message);
+});
+
 ```
 
 ### Push from PHP (using elephant.io client)
